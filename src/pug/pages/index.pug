@@ -1,0 +1,97 @@
+
+extends ../layout/main
+block variable
+	-
+		var title_page = 'Объект'
+		var id_page = 'object-news'
+	
+block meta
+	title= title_page
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(defer src='./assets/scripts/index.js')
+	script(defer src='./assets/scripts/home.js')
+	script(defer src='./assets/scripts/about.js')
+block content
+	.object.xcol-lg-10 
+		.object__img
+			img(src="https://kolorit.ua/wp-content/uploads/2021/04/xkafe-konuki-2_1920-385.jpg.pagespeed.ic.c4lu9vnQmE.webp" alt="img")
+		.container
+			.object__content
+				.object__content-container
+					p В самом центре Харькова расположилось уютное кафе "Каша Маслом", которое предлагает гостям разнообразные блюда по системе fast casual. Атмосферный интерьер, меню европейской и украинской кухни, качественное обслуживание - все это создает неповторимый колорит заведения, в котором Вы можете приятно провести время в кругу друзей.
+					p В самом центре Харькова расположилось уютное кафе "Каша Маслом", которое предлагает гостям разнообразные блюда по системе fast casual. Атмосферный интерьер, меню европейской и украинской кухни, качественное обслуживание - все это создает неповторимый колорит заведения, в котором Вы можете приятно провести время в кругу друзей.
+				.object__slider.block-offset 
+					.row 
+						.object__slider-control
+							.object__slider-counter-wrapper
+								span.object__slider-counter-wrapper-text ФОТО
+								span.object__slider-counter.js-services-slider-counter 1 / 2
+							.object__slider-arrows 
+								.object__slider-arrow.object__slider-arrow-prev.js-object__slider-arrow-prev
+									<i class="fa fa-angle-up"></i>
+								.object__slider-arrow.object__slider-arrow-next.js-object__slider-arrow-next
+									<i class="fa fa-angle-up"></i>
+						.object__slider-wrap.js-object-slider
+							.js-services-slider__item
+								img(src="https://kolorit.ua/wp-content/uploads/2021/04/xkafe-konuki-3_730-470.jpg.pagespeed.ic.LLPCREBCrN.webp" alt="img")
+							.js-services-slider__item
+								img(src="https://kolorit.ua/wp-content/uploads/2021/04/xkafe-konuki-730-470.jpg.pagespeed.ic.cMuaI63We2.webp" alt="img")
+				.object__content-container.block-offset
+					<div class="object-passport">
+						<div class="object-passport__top">
+							<div class="object-passport__col">
+								<span>паспорт объекта</span>
+							</div>
+							<div class="object-passport__col">
+								<span>использованные материалы</span>
+							</div>
+						</div>
+						<div class="object-passport__main">
+							<div class="object-passport__col">
+								<div class="object-passport__item">
+									<span class="object-passport__item-title">Объект</span>
+									<span class="object-passport__item-text">Кафе "Каша Маслом"</span>
+								</div>
+								<div class="object-passport__item">
+									<span class="object-passport__item-title">Адрес</span>
+									<span class="object-passport__item-text">г. Харьков, ул. Сумская, 21</span>
+								</div>
+								<div class="object-passport__item">
+									<span class="object-passport__item-title">краска</span>
+									<span class="object-passport__item-text">Kolorit Legenda</span>
+								</div>
+								<div class="object-passport__item">
+									<span class="object-passport__item-title">литраж</span>
+									<span class="object-passport__item-text">160</span>
+								</div>
+							</div>
+							<div class="object-passport__col object-passport__col_right">
+								<div class="object-passport__item">
+									<span class="object-passport__item-title">Стены</span>
+									<div class="object-passport__object">
+										<div class="object-passport__object-img-wrapper">
+											<img alt="foto" src="https://kolorit.ua/wp-content/uploads/2020/08/kolorite-Legenda-medal.png.pagespeed.ce.Xk5nYp-h6X.png" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+										</div>
+										<div class="object-passport__object-content">
+											<span class="object-passport__item-text object-passport__item-text_underline">Kolorit Legenda база А</span>
+											<span class="object-passport__item-text">Цвет: белый</span>
+										</div>
+										<div class="object-passport__color-box" style="background-color: #"></div>
+									</div>
+								</div>
+																	</div>
+						</div>
+					</div>
+					<div class="advice-open-sec__bottom-section">
+						<a class="on-light-bg link-with-circle advice-open-sec__link" href="https://kolorit.ua/object/">К другим объектам</a>
+						<time class="advice-open-sec__date" datetime="2021-04-19">19.04.2021</time>
+					</div>
+
+
+block footer
+	include ../includes/footer.pug
+
+block header

@@ -1,0 +1,307 @@
+#object-news {
+    background-color: #f6f6f6;
+    .block-offset {
+        padding-top: 60px;
+    }
+
+    .object {
+        &__img {
+            margin-bottom: 60px;
+            height: 385px;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__content {
+            padding: 64px 80px 64px 85px;
+            background-color: #fff;
+            width: 85%;
+            margin: 0 auto;
+
+            &-container {
+                width: 85%;
+                margin-left: auto;
+                margin-right: auto;
+                padding-right: 18%;
+
+                p:not(:last-child) {
+                    margin-bottom: 26px;
+                }
+            }
+
+            .slick-list {
+                padding: 0 20% 0 0;
+            }
+        }
+
+        &__slider {
+            padding-bottom: 60px;
+            &-control {
+                position: relative;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                word-wrap: break-word;
+                margin-left: 10px;
+                display: flex;
+                justify-content: center;
+                margin-right: 10px;
+                width: calc(7.66667% - 20px);
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+
+            &-wrap {
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                word-wrap: break-word;
+                margin-left: 10px;
+                margin-right: 10px;
+                width: calc(83.33333% - 20px);
+            }
+
+            &-counter-wrapper {
+                left: calc(50% - 25px);
+                font-size: 10px;
+                line-height: 1.5em;
+                color: #c11426;
+                text-transform: uppercase;
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                &-text {
+                    margin-right: 3px;
+                }
+            }
+
+            &-arrows {
+                -ms-flex-preferred-size: 125px;
+                flex-basis: 125px;
+                height: 125px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+            }
+
+            &-arrow {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: #e4121f;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                cursor: pointer;
+                font-size: 35px;
+                color: #fff;
+
+                &-prev {
+                    transform: rotate(-90deg);
+                }
+
+                &-next {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+
+    .object-passport {
+        box-shadow: 0 5px 40px rgba(2, 49, 91, 0.2);
+        margin-bottom: 50px;
+    }
+
+    .object-passport__col {
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+        color: #202124;
+        flex: 1;
+        font-size: 18px;
+        line-height: 21px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+        &_right {
+            padding-left: 60px;
+        }
+    }
+
+    .object-passport__top {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 20px 0;
+        background-color: #fff;
+        box-shadow: 0 10px 20px rgba(24, 49, 91, 0.2);
+        position: relative;
+
+        ::before {
+            content: '';
+            width: 1px;
+            height: 32px;
+            background-color: #f0f1f8;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+        }
+    }
+
+    .object-passport__main {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 35px 40px 66px;
+        position: relative;
+
+        ::before {
+            content: '';
+            width: 1px;
+            height: calc(100% - 100px);
+            background-color: #f0f1f8;
+            position: absolute;
+            top: 35px;
+            left: 50%;
+        }
+    }
+
+    .object-passport__item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .object-passport__item-title {
+        color: #000c31;
+        font-size: 10px;
+        line-height: 1.5em;
+        text-transform: uppercase;
+        -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    }
+
+    .object-passport__item-text {
+        color: #888;
+        font-size: 12px;
+        line-height: 1.8em;
+        -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    }
+    .object-passport__item-text_underline {
+        border-bottom: 1px solid #202124;
+        line-height: 1em;
+        margin-bottom: 5px;
+    }
+
+    .advice-open-sec__bottom-section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .object-passport__item+.object-passport__item {
+        margin-top: 14px;
+    }
+
+    .object-passport__col_right .object-passport__item-title {
+        -ms-flex-preferred-size: 85px;
+        flex-basis: 85px;
+    }
+
+    .object-passport__object {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+    }
+
+    .object-passport__object-img-wrapper {
+        width: 46px;
+        height: 46px;
+        margin-right: 10px;
+    }
+
+    .object-passport__object-img-wrapper img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+    .object-passport__object-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .object-passport__color-box {
+        display: block;
+        width: 7px;
+        height: 7px;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+        margin-left: 7px;
+        margin-bottom: 10px;
+    }
+
+    .js-object-slider .slick-list {
+        padding: 0 20% 0 0;
+    }
+
+    .js-object-slider .slick-slide {
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+
+    .slick-slide img {
+        display: block;
+        object-fit: cover;
+    }
+
+    .js-object-slider .slick-slide:not(.slick-active) {
+        -webkit-transform: scale(.5) translate(-45%,0);
+        -ms-transform: scale(.5) translate(-45%,0);
+        transform: scale(.5) translate(-45%,0);
+    }
+}
